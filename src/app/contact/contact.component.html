@@ -1,0 +1,28 @@
+<div class="content">
+  <h1>My Contacts</h1>
+  <p>Contact me by email or on Instagram</p>
+  <p>Email: {{email}}</p>
+  <p>Instagram: {{instagram}}</p>
+  <img src="assets/images/image-photographer-3.jpg" alt="Photo 3">
+  
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="name">Username:</label>
+      <input id="name" formControlName="name">
+    </div>
+    <div>
+      <label for="comment">Your comment:</label>
+      <input id="comment" formControlName="comment">
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+
+  <h3>Comments</h3>
+
+  <ul>
+    <li *ngFor="let comment of comments; let i = index">
+      <button (click)="onDelete(i)">Delete</button>
+      <span><b>{{comment.name}}:</b> {{comment.comment}}</span>
+    </li>
+  </ul>
+</div>

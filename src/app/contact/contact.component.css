@@ -1,0 +1,55 @@
+div.content {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /* background: linear-gradient(to right, #7fb5fd, #e1a1ff); Градиентный фон */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column; /* Располагает элементы в колонке */
+    align-items: center; /* Выравнивает элементы по центру */
+    /*background: rgba(255, 255, 255, 0.8); /* Белый фон с прозрачностью */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Выравнивает текст по центру */
+  }
+  
+  .content h1 {
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 3em;
+    color: #21069b;
+    font-weight: bold; /* Делает текст жирным */
+  }
+  
+  .content p {
+    margin: 5px 0;
+    font-size: 1.2em;
+    font-weight: bold; /* Делает текст жирным */
+    color: #333;
+  }
+  
+  .content img {
+    margin-top: 20px;
+    width: 60%; /* Уменьшает ширину изображения */
+    max-width: 300px; /* Ограничивает максимальную ширину изображения */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .content a:hover {
+    text-decoration: underline;
+  }
+  

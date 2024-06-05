@@ -1,0 +1,41 @@
+.content {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #7fb5fd, #e1a1ff); /* Градиентный фон */
+    display: flex;
+    flex-direction: column; /* Располагаем элементы в колонке */
+    align-items: center; /* Выравниваем элементы по центру */
+    height: 100vh;
+  }
+  
+  .content h2 {
+    margin-top: 1600px; /* Отступ сверху для заголовка */
+    font-size: 3em; /* Увеличим размер заголовка */
+    color: #21069b;
+  }
+  
+  .content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .content h3 {
+    margin-top: 20px; /* Отступ между заголовками */
+    font-size: 2em; /* Увеличим размер заголовка */
+  }
+  
+  .content p {
+    margin-top: 0;
+    text-align: center; /* Выравниваем текст по левому краю */
+    font-size: 1.5em; /* Увеличим размер текста */
+  }
+  
+  .content img {
+    width: 300px; /* Ширина изображения */
+    height: auto;
+    margin-top: 20px; /* Отступ сверху */
+  }
+  

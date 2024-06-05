@@ -1,0 +1,83 @@
+div.content {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #7fb5fd, #e1a1ff); /* Градиентный фон */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Минимальная высота для body */
+  box-sizing: border-box;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  background-color: #333;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000; /* Высокий z-index для меню */
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 14px 20px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #575757;
+}
+
+.content {
+  text-align: center;
+  color: #000000;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px; /* Отступ от верхнего меню */
+  width: 100%;
+}
+
+.content h1 {
+  font-size: 2em;
+  color: #21069b;
+  margin-bottom: 25px;
+  padding-top: 110px;
+  margin-bottom: 25px;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.home-content p {
+  font-size: 1.5em;
+  margin: 20px;
+  color: #000000;
+}
+
+.photo {
+  width: 40%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+}

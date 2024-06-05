@@ -1,0 +1,84 @@
+div.content {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background: linear-gradient(to right, #7fb5fd, #e1a1ff); Градиентный фон */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: #333;
+    width: 100%;
+    position: fixed;
+    top: 0;
+  }
+  
+  nav ul li {
+    margin: 0;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+  }
+  
+  nav ul li a:hover {
+    background-color: #575757;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column; /* Задаем направление колонок */
+    align-items: center; /* Выравнивание элементов по центру */
+  }
+  
+  .content h1 {
+    margin-top: 190px;
+    font-size: 4em;
+    color: #21069b;
+    
+  }
+  
+  .content p {
+    margin-top: 0;
+    text-align: left;
+    padding-top: 10px; /* Отступ от заголовка */
+    font-size: 2em;
+    text-align: center;
+  }
+  
+  .content img {
+    max-width: 50%; /* Ширина изображения */
+    height: auto;
+    margin-top: 20px; /* Отступ от текста */
+  }
+  
+  .content ul {
+    margin-top: 0;
+    margin-left: 20px; /* Отступ списка от текста */
+    padding-left: 0;
+    font-size: 2em;
+    text-align: left;
+  }
+  
+  .content ul li {
+    list-style-type: none; /* Убираем маркеры списка */
+  }
+  
+  .content ul li:before {
+    content: "\2022"; /* Добавляем маркер списка */
+    color: #000000; /* Цвет маркера */
+    display: inline-block;
+    width: 1em; /* Ширина маркера */
+    margin-left: -1em; /* Отступ маркера */
+  }
+  

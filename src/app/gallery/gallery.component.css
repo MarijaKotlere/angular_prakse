@@ -1,0 +1,30 @@
+div.content {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /*background: linear-gradient(to right, #7fb5fd, #e1a1ff);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .content {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет изображениям переноситься на следующую строку */
+    justify-content: center; /* Выравнивает изображения по центру */
+    align-items: center; /* Выравнивает изображения по центру */
+    gap: 20px; /* Расстояние между изображениями */
+    padding: 20px;
+    /*background: rgba(255, 255, 255, 0.8);  Белый фон с прозрачностью */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .content img {
+    width: calc(25% - 20px); /* Устанавливает ширину каждого изображения */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  

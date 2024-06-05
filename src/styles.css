@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #7fb5fd, #e1a1ff); /* Градиентный фон */
+}
+
+div.content {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background: linear-gradient(to right, #ff7e5f, #feb47b); Градиентный фон */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 50%; /* Позиционируем левый край меню по центру страницы */
+  transform: translateX(-50%); /* Смещаем меню влево на половину его ширины */
+  background-color: #c7e1f7; /* Цвет фона меню */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Небольшая тень для визуального выделения */
+  z-index: 1000; /* Убедитесь, что меню находится над остальными элементами */
+  width: 100%; /* Меню занимает всю ширину */
+  max-width: 1200px; /* Ограничение максимальной ширины для лучшего отображения */
+  margin: 0 auto; /* Центрирование меню по горизонтали */
+}
+
+.fixed-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around; /* Распределяет элементы списка по всей ширине */
+}
+
+.fixed-nav li {
+  margin: 10px 0; /* Добавляет отступы между элементами меню */
+}
+
+.fixed-nav a {
+  text-decoration: none;
+  color: #1f2650; /* Цвет текста */
+  font-weight: bold;
+  padding: 10px 20px; /* Добавляет внутренние отступы для кликабельной области */
+  display: block;
+}
+
+.fixed-nav a:hover {
+  background-color: #f0f0f0; /* Цвет фона при наведении */
+}
+
+/* Добавьте отступы к контенту, чтобы учесть фиксированное меню */
+main {
+  padding-top: 60px; /* Подгоните значение под высоту вашего меню */
+}
