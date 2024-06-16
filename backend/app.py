@@ -37,7 +37,8 @@ def delete_comment(comment_id):
     conn.execute('DELETE FROM comments WHERE id = ?', (comment_id,))
     conn.commit()
     conn.close()
-    return redirect(url_for('index'))
+    return comment_id
+    # return redirect(url_for('index'))
 
 @app.route('/api/comment/<int:comment_id>', methods=['GET', 'POST'])
 def edit_comment(comment_id):
