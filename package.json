@@ -2,11 +2,14 @@
   "name": "photographer-portfolio",
   "version": "0.0.0",
   "scripts": {
-"test": "jest --verbose",
-"test:coverage": "jest --coverage",
-"test:watch": "jest --watch",
+    "test": "jest --verbose",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch",
+    "test_backend": "cd backend && python -m unittest test_app.py",
     "ng": "ng",
     "start": "ng serve",
+    "build_backend": "ng build && cd ./backend && python app.py",
+    "start_backend": "cd ./backend && python app.py",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "serve:ssr:photographer-portfolio": "node dist/photographer-portfolio/server/server.mjs"

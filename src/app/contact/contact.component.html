@@ -11,18 +11,19 @@
       <input id="name" formControlName="name">
     </div>
     <div>
-      <label for="comment">Your comment:</label>
-      <input id="comment" formControlName="comment">
+      <label for="message">Your comment:</label>
+      <input id="message" formControlName="message">
     </div>
     <button type="submit">Submit</button>
   </form>
 
   <h3>Comments</h3>
 
-  <ul>
+
+  <ul *ngIf='(comments.length>0)'>
     <li *ngFor="let comment of comments; let i = index">
       <button (click)="onDelete(i)">Delete</button>
-      <span><b>{{comment.name}}:</b> {{comment.comment}}</span>
+      <span><b>{{comment.name}}:</b> {{comment.message}}</span>
     </li>
   </ul>
 </div>
