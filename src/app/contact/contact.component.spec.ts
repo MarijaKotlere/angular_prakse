@@ -1,10 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 import { ContactComponent } from './contact.component';
+import { ApiService } from '../api.service';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('ContactComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ContactComponent],
+      imports: [ContactComponent, HttpClientModule],
     }).compileComponents();
   });
 

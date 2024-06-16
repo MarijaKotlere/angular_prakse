@@ -47,4 +47,6 @@ jobs:
           # Optional - x64 or x86 architecture, defaults to x64
           architecture: 'x64'
       # You can test your matrix by printing the current Python version
-      - run: cd backend && python -m unittest test_app.py
+      - run: |
+          cd backend 
+          python -m unittest test_app.py
